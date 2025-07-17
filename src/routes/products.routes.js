@@ -7,3 +7,5 @@ routesProducts.get('/products', ProductsControllers.getAllProducts)
 routesProducts.get('/products/:id', ProductsControllers.getProductId)
 
 routesProducts.post('/products', ProductsControllers.createProduct)
+routesProducts.patch('/products/:id', ProductsControllers.updateProduct)
+routesProducts.delete('/products/:id', ProductsControllers.deleteProduct)

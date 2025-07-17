@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(routesProducts)
 
 try {
-  await sequelize.sync({ force: true })
+  await sequelize.sync({ force: false })
 } catch (e) {
   throw new Error(e)
 }
