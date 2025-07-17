@@ -1,0 +1,17 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Monitor UltraWide Curvo 34\"",
+  "description": "Monitor de gaming inmersivo con panel VA, resolución QHD (3440x1440), 144Hz de tasa de refresco y tiempo de respuesta de 1ms. Ideal para juegos y productividad.",
+  "price": 499.99,
+  "stock": 50,
+  "category": [
+    1,   // ID para "Electrónica"
+    3,   // ID para "Monitores"
+    13   // ID para "Videojuegos"
+  ]
+}

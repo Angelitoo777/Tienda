@@ -1,0 +1,46 @@
+# Dependencias de Node
+node_modules/
+.npm/ # Caché de npm
+npm-debug.log* # Logs de depuración de npm
+
+# Archivos de entorno (contienen credenciales y configuraciones locales)
+.env
+.env.*local # Si usas variables de entorno específicas de desarrollo local
+
+# Archivos de compilación / salida
+/dist/
+/build/
+/out/
+# Si usas TypeScript y compilas a JS
+*.js.map
+*.d.ts # Archivos de definición de TypeScript (si se generan en la salida y no son de fuentes)
+
+# Logs
+*.log
+logs/
+tmp/
+
+# Caché / Temporales
+.DS_Store # Archivos de macOS
+Thumbs.db # Archivos de Windows
+.cache/
+.nyc_output/ # Cobertura de código (ej. con Istanbul/nyc)
+coverage/ # Directorios de cobertura de pruebas
+*.sqlite3 # Si usas SQLite localmente
+*.db # Otros archivos de base de datos locales (ej. db.sqlite)
+
+# Archivos de editores e IDEs
+.vscode/ # Configuración de VS Code específica del usuario (no la compartida)
+.idea/ # Directorios de IntelliJ IDEA
+*.sublime-project
+*.sublime-workspace
+*.swp # Archivos de intercambio de Vim
+
+# Archivos de prueba
+.nyc_output/
+/test/coverage/
+
+# Misceláneos
+.eslintcache # Caché de ESLint
+.prettierignore # Archivo de Prettier si no quieres que lo gestione Git
+.editorconfig # A veces, aunque es buena idea compartirlo, depende del equipo
